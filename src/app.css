@@ -1,0 +1,262 @@
+:root {
+  --bg-opacity: 1;
+  --border-opacity: 1;
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.resize-border {
+  position: absolute;
+  border-style: dashed;
+  --border-opacity: 1;
+  border-color: #718096;
+  border-color: rgba(113, 128, 150, var(--border-opacity));
+}
+
+.resize-corner {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  --bg-opacity: 1;
+  background-color: #90cdf4;
+  background-color: rgba(144, 205, 244, var(--bg-opacity));
+  border-radius: 9999px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+.cursor-ew-resize {
+  cursor: ew-resize;
+}
+
+.cursor-ns-resize {
+  cursor: ns-resize;
+}
+
+.cursor-nwse-resize {
+  cursor: nwse-resize;
+}
+
+.cursor-nesw-resize {
+  cursor: nesw-resize;
+}
+
+.border-gray-300 {
+  border-color: rgba(226, 232, 240, var(--border-opacity));
+}
+
+.border-gray-400 {
+  --border-opacity: 1;
+  border-color: #cbd5e0;
+  border-color: rgba(203, 213, 224, var(--border-opacity));
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-green-400 {
+  --bg-opacity: 1;
+  background-color: #68d391;
+  background-color: rgba(104, 211, 145, var(--bg-opacity)); 
+}
+
+.bg-red-500 {
+  background-color: rgba(245, 101, 101, var(--bg-opacity));
+}
+
+.hover-bg-red-700:hover {
+  background-color: rgba(197, 48, 48, var(--bg-opacity));
+}
+
+.bg-blue-600 {
+  background-color: rgba(49, 130, 206, var(--bg-opacity));
+}
+
+.hover-bg-blue-700:hover {
+  background-color: rgba(43, 108, 176, var(--bg-opacity))
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.text-white {
+  color: rgba(255, 255, 255, var(--text-opacity))
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+label.flex-center:hover {
+  background-color: rgba(160, 174, 192, var(--bg-opacity));
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-outline {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.transform {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.-transform-x-1\/2 {
+  --transform-translate-x: -50%;
+}
+
+.transform-x-1\/2 {
+  --transform-translate-x: 50%;
+}
+
+.-transform-y-1\/2 {
+  --transform-translate-y: -50%;
+}
+
+.transform-y-1\/2 {
+  --transform-translate-y: 50%;
+}
+
+.origin-top-left {
+  transform-origin: top left;
+}
+
+.operation {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .md-hidden {
+    display: none;   
+  }
+  .md-scale-25 {
+    --transform-scale-x: .25;
+    --transform-scale-y: .25;
+  }
+}
