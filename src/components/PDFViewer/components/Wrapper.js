@@ -13,7 +13,7 @@ export default function Wrapper(props) {
     const target = event.target
     setX(_x)
     setY(_y)
-    props.panstart({detail: {x: _x, y: _y, target, operation: wrapper.current == target ? 'move' : 'scale'}})
+    props.panstart({detail: {x: _x, y: _y, target, operation: wrapper.current === target ? 'move' : 'scale'}})
   }
 
   const handleMouseMove = (event) => {

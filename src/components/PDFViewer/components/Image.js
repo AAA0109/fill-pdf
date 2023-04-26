@@ -37,7 +37,7 @@ export default function Image({ width, height, updateHandler, deleteHandler, pay
     startY = event.detail.y;
     let _operation = event.detail.operation
     setOperation(_operation)
-    if (_operation == 'scale') {
+    if (_operation === 'scale') {
       directions = event.detail.target.dataset.direction.split('-');
     }
   }

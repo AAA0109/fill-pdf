@@ -24,7 +24,7 @@ export default function Drawing({ originWidth, originHeight, width, x, y, pageSc
     startY = event.detail.y;
     let _operation = event.detail.operation
     setOperation(_operation)
-    if (_operation == 'scale') {
+    if (_operation === 'scale') {
       direction = event.detail.target.dataset.direction;
     }
   }

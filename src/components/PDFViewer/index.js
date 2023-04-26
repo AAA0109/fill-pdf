@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PDFPage from './components/PDFPage'
 import Image from './components/Image'
-import Text from './components/Text'
+// import Text from './components/Text'
 import Drawing from './components/Drawing'
 import DrawingCanvas from './components/DrawingCanvas';
 import { Box } from '@material-ui/core';
@@ -40,15 +40,15 @@ export default function PDFViewer() {
     dispatch(actions.setItem(Constants.SET_SELECTED_PAGEINDEX, index))
   }
 
-  const selectFontFamily = (event) => {
-    const name = event.detail.name
-    fetchFont(name)
-    dispatch(actions.setItem(Constants.SET_CURRENT_FONT, name))
-  }
+  // const selectFontFamily = (event) => {
+  //   const name = event.detail.name
+  //   fetchFont(name)
+  //   dispatch(actions.setItem(Constants.SET_CURRENT_FONT, name))
+  // }
 
   function updateObject(objectId, payload) {
     let _allObjects = allObjects.map((objects, pIndex) =>
-      pIndex == selectedPageIndex
+      pIndex === selectedPageIndex
         ? objects.map(object =>
             object.id === objectId ? { ...object, ...payload } : object
           )
@@ -58,7 +58,7 @@ export default function PDFViewer() {
   }
   function deleteObject(objectId) {
     let _allObjects = allObjects.map((objects, pIndex) =>
-      pIndex == selectedPageIndex
+      pIndex === selectedPageIndex
         ? objects.filter(object => object.id !== objectId)
         : objects
     );
@@ -116,7 +116,7 @@ export default function PDFViewer() {
                                 pageScale={pagesScale[index]}
                               />
                             )
-                          } 
+                          }
                           // if (object.type === 'text') {
                           //   return (
                           //     <Text 
@@ -148,6 +148,7 @@ export default function PDFViewer() {
                               />
                             )
                           }
+                          return (<></>)
                         })
                       }
                     </Box>

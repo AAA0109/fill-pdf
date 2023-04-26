@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Tbar({ ...props }) {
-  const { pages, pdfName, pdfFile, pagesScale, allObjects, currentFont, selectedPageIndex, saving } = useSelector((state) => state.info)
+  const { pages, pdfName, pdfFile, pagesScale, allObjects, selectedPageIndex, saving } = useSelector((state) => state.info)
   const classes = useStyles();
   const dispatch = useDispatch()
 
